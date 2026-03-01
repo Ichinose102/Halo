@@ -1,0 +1,23 @@
+{
+  "name": "halo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ichinose102/Halo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ichinose102/Halo/issues"
+  },
+  "homepage": "https://github.com/Ichinose102/Halo#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
