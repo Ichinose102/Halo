@@ -42,3 +42,24 @@ export const updateSubjectStatus = (subjectId: string, newStatus: 'idée' | 'en 
             : subject
     );
 };
+
+// Fonction pour trier les sujets par priorité
+export const sortSubjectsByPriority = (subjects: Subject[]): Subject[] => { 
+    const priorityOrder = { 'faible': 1, 'moyenne': 2, 'élevée': 3 };
+    return subjects.sort((a, b) => priorityOrder[a.priority] - priorityOrder[b.priority]);
+};
+
+// Fonction pour créer un nouveau sujet avec un ID unique et une date de création
+export const createNewSubject = (title: string, niche: string , priority : 'faible' | 'moyenne' | 'élevée'  ): Subject => {
+  return {
+    id: crypto.randomUUID(), 
+    title,
+    niche,
+    status: 'idée',          
+    priority: 'faible',     
+    sources: [],             
+    team: [],                
+    createdAt: new Date()    
+  };
+};
+
