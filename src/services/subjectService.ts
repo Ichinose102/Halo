@@ -32,3 +32,4 @@ export const getSearchUrl = (title: string, platform: 'google' | 'youtube'): str
 
   return baseUrl + cleanedTitle; 
 };
+
